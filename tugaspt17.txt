@@ -1,0 +1,83 @@
+NAMA :NABIL PRATAMA ALFARISI
+NIM :241011402593
+KELAS :03TPLP023
+
+TUGAS PT 17
+
+SOAL:
+1. Apa kompleksitas waktu terbaik bubble short?
+a. N^2
+b. NLogN
+c. N
+d. N(LogN)^2
+
+2. Asumsikan bahwa kita menggunakan Bubble Sort untuk mengurutkan n 
+elemen yang berbeda dalam urutan menaik. Kapan kasus terbaik Bubble 
+Sort terjadi?
+a. Ketika elemen diurutkan dalam urutan menaik
+b. Ketika elemen diurutkan dalam urutan menurun
+c. Ketika elemen tidak diurutkan berdasarkan urutan apa pun
+d. Tidak ada kasus terbaik untuk Bubble Sort. Selalu membutuhkan 
+waktu O(n*n)
+
+3. Jumlah swappings yang diperlukan untuk menyortir angka 8, 22, 7, 9, 31, 
+5, 13 dalam urutan menaik, menggunakan gubble short adalah
+a. 11
+b. 12
+c. 13
+
+
+
+JAWABAN:
+1. c. N :
+Kasus terbaik terjadi saat array sudah terurut, sehingga Bubble Sort hanya melakukan satu pass tanpa swap.
+
+2.a. Ketika elemen diurutkan dalam urutan menaik:
+Bubble Sort menjadi O(n) jika elemen sudah berurutan naik dan algoritma menggunakan flag swapped = false sehingga langsung berhenti.
+
+3.Urutan awal:
+8, 22, 7, 9, 31, 5, 13
+
+Pass 1
+
+22 > 7 → swap (1)
+22 > 9 → swap (2)
+31 > 5 → swap (3)
+31 > 13 → swap (4)
+
+Setelah pass 1:
+8, 7, 9, 22, 5, 13, 31
+
+Pass 2
+
+8 > 7 → swap (5)
+22 > 5 → swap (6)
+22 > 13 → swap (7)
+
+Setelah pass 2:
+7, 8, 9, 5, 13, 22, 31
+
+Pass 3
+
+9 > 5 → swap (8)
+
+Setelah pass 3:
+7, 8, 5, 9, 13, 22, 31
+
+Pass 4
+
+8 > 5 → swap (9)
+
+Setelah pass 4:
+7, 5, 8, 9, 13, 22, 31
+
+Pass 5
+
+7 > 5 → swap (10)
+
+Setelah pass 5:
+5, 7, 8, 9, 13, 22, 31 (sudah berurutan)
+
+Total swap = 10
+
+Pilihan tidak ada 10, tapi karna yang paling mendekati adalah 11 (opsi a).
