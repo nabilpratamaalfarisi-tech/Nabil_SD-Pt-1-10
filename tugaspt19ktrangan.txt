@@ -1,0 +1,40 @@
+1. Struktur Node
+struct Node {
+    char data;
+    Node *left, *right;
+};
+
+
+Node punya:
+data (tipe char → R, A, S, I, T, E)
+pointer left (anak kiri)
+pointer right (anak kanan)
+
+
+2. Fungsi buatNode()
+Node* buatNode(char x)
+Untuk membuat node baru dengan data huruf.
+
+
+3. Prosedur Traversal
+Semua traversal menggunakan rekursi, sama seperti teori di modul.
+PreOrder = Root → Left → Right
+InOrder = Left → Root → Right
+PostOrder = Left → Right → Root
+
+
+4. Membangun Struktur Tree
+R->left = A;
+A->left = S;
+A->right = E;
+S->left = I;
+S->right = T;
+Dari kode ini pohon terbentuk persis seperti yang diperlukan agar output sama dengan soal.
+
+
+5. Print Hasil
+Sama persis dengan format soal:
+
+Tampilan secara PreOrder  : R A S I T E
+Tampilan secara InOrder   : I S T A R E
+Tampilan secara PostOrder : I T S A E R
